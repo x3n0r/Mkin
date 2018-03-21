@@ -28,6 +28,12 @@ public enum UseableByOptions
 	Dwarfs
 }
 
+public enum CardBackOptions
+{
+	CardBackDoor,
+	CardBackTreasure
+}
+
 
 public class CardAsset : ScriptableObject 
 {
@@ -42,6 +48,7 @@ public class CardAsset : ScriptableObject
 	public int BonusValue;
 	public EquipSlotOptions EquipmentSlot;
 	public UseableByOptions UseableBy;
+	public CardBackOptions CardBack;
 
     [Header("Creature Info")]
     public int Level;   // =0 => spell card

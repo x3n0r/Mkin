@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;
+
 
 // holds the refs to all the Text, Images on the card
 public class OneCardManager : MonoBehaviour {
@@ -15,6 +17,7 @@ public class OneCardManager : MonoBehaviour {
     public Text BonusText;
 	public Text EquipSlotText;
 	public Text UseableByText;
+	public List<GameObject> CardBackList;
 
 
     [Header("Image References")]
@@ -84,6 +87,17 @@ public class OneCardManager : MonoBehaviour {
 		}
 		EquipSlotText.text = cardAsset.EquipmentSlot.ToString ();
 		UseableByText.text = cardAsset.UseableBy.ToString ();
+
+		foreach (GameObject go in CardBackList) {
+			Debug.Log ("go name:" + go.name);
+			Debug.Log ("cardasset to string name:" + cardAsset.CardBack.ToString());
+			if (cardAsset.CardBack.ToString() == go.name) {
+				go.SetActive (true);
+			} else {
+				//destory
+				go.SetActive (false);
+			}
+		}
 
         if (PreviewManager != null)
         {
