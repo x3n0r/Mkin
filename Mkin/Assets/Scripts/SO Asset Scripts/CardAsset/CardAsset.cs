@@ -15,6 +15,7 @@ public enum TargetingOptions
 
 public enum EquipSlotOptions
 {
+	Null,
 	OneHanded,
 	TwoHanded,
 	Class,
@@ -23,7 +24,7 @@ public enum EquipSlotOptions
 
 public enum UseableByOptions
 {
-	Everyone,
+	Null,
 	Elfs,
 	Dwarfs
 }

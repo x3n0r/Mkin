@@ -77,17 +77,30 @@ public class OneCardManager : MonoBehaviour {
         DescriptionText.text = cardAsset.Description;
         // 5) Change the card graphic sprite
         CardGraphicImage.sprite = cardAsset.CardImage;
-		// 6) Set sell value
-		if (cardAsset.SellValue != 0) {
-			SellText.text = cardAsset.SellValue.ToString ();
-		}
-		// 7) Set Bonus Value
-		if (cardAsset.BonusValue != 0) {
-			BonusText.text = cardAsset.BonusValue.ToString ();
-		}
-		EquipSlotText.text = cardAsset.EquipmentSlot.ToString ();
-		UseableByText.text = cardAsset.UseableBy.ToString ();
 
+		if (cardAsset.Level == 0) {
+			EquipSlotText.text = cardAsset.EquipmentSlot.ToString ();
+			UseableByText.text = cardAsset.UseableBy.ToString ();
+			// 6) Set sell value
+			if (cardAsset.SellValue != 0) {
+				SellText.text = cardAsset.SellValue.ToString ();
+			}
+			// 7) Set Bonus Value
+			if (cardAsset.BonusValue != 0) {
+				BonusText.text = cardAsset.BonusValue.ToString ();
+			}
+		} else {
+			EquipSlotText.text = "";
+			UseableByText.text = "";
+			// 6) Set TreasureAmount value
+			if (cardAsset.TreasureAmount != 0) {
+				SellText.text = cardAsset.TreasureAmount.ToString ();
+			}
+			// 7) Set Level as Bonus Value
+			if (cardAsset.Level != 0) {
+				BonusText.text = cardAsset.Level.ToString ();
+			}
+		}
 		foreach (GameObject go in CardBackList) {
 			Debug.Log ("go name:" + go.name);
 			Debug.Log ("cardasset to string name:" + cardAsset.CardBack.ToString());
