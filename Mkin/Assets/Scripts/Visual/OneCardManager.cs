@@ -9,10 +9,14 @@ public class OneCardManager : MonoBehaviour {
     public OneCardManager PreviewManager;
     [Header("Text Component References")]
     public Text NameText;
-    public Text ManaCostText;
-    public Text DescriptionText;
-    public Text HealthText;
-    public Text AttackText;
+	public Text DescriptionText;
+	public Image OneTimeUseImage;
+	public Text SellText;
+    public Text BonusText;
+	public Text EquipSlotText;
+	public Text UseableByText;
+
+
     [Header("Image References")]
     public Image CardTopRibbonImage;
     public Image CardLowRibbonImage;
@@ -58,25 +62,28 @@ public class OneCardManager : MonoBehaviour {
         else
         {
             //CardBodyImage.color = GlobalSettings.Instance.CardBodyStandardColor;
-            CardFaceFrameImage.color = Color.white;
+            CardFaceFrameImage.color = Color.black;
             //CardTopRibbonImage.color = GlobalSettings.Instance.CardRibbonsStandardColor;
             //CardLowRibbonImage.color = GlobalSettings.Instance.CardRibbonsStandardColor;
         }
         // 2) add card name
         NameText.text = cardAsset.name;
-        // 3) add mana cost
-        ManaCostText.text = cardAsset.ManaCost.ToString();
+        // 3) add OneTimeUse
+		OneTimeUseImage.gameObject.SetActive(cardAsset.OneTimeUse);
         // 4) add description
         DescriptionText.text = cardAsset.Description;
         // 5) Change the card graphic sprite
         CardGraphicImage.sprite = cardAsset.CardImage;
-
-        if (cardAsset.MaxHealth != 0)
-        {
-            // this is a creature
-            AttackText.text = cardAsset.Attack.ToString();
-            HealthText.text = cardAsset.MaxHealth.ToString();
-        }
+		// 6) Set sell value
+		if (cardAsset.SellValue != 0) {
+			SellText.text = cardAsset.SellValue.ToString ();
+		}
+		// 7) Set Bonus Value
+		if (cardAsset.BonusValue != 0) {
+			BonusText.text = cardAsset.BonusValue.ToString ();
+		}
+		EquipSlotText.text = cardAsset.EquipmentSlot.ToString ();
+		UseableByText.text = cardAsset.UseableBy.ToString ();
 
         if (PreviewManager != null)
         {
