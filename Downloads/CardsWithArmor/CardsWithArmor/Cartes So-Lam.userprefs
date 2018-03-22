@@ -1,0 +1,32 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Logic\CardLogic.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Logic\CardLogic.cs" Line="48" Column="6" />
+      <File FileName="Assets\Scripts\Commands\CreatureAttackCommand.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Visuals\CreatureAttackVisual.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Commands\DealDamageCommand.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Visuals\OneCreatureManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Visuals\PlayerPortraitVisual.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Logic\CreatureLogic.cs" Line="145" Column="33" />
+      <File FileName="Assets\Scripts\Logic\Player.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SO Asset Scripts\CardAsset\CardAsset.cs" Line="39" Column="20" />
+      <File FileName="Assets\Scripts\SO Asset Scripts\CharacterAsset\CharacterAsset.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Logic\SpellScripts\SpellEffect.cs" Line="6" Column="31" />
+      <File FileName="Assets\Scripts\Logic\SpellScripts\DamageAllOpponentCreatures.cs" Line="14" Column="14" />
+      <File FileName="Assets\Scripts\SO Asset Scripts\CharacterAsset\Editor\CharacterUnityIntegration.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SO Asset Scripts\Editor\ScriptableObjectUtility2.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SO Asset Scripts\CardAsset\Editor\CardUnityIntegration.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Logic\SpellScripts\DealDamageToTarget.cs" Line="17" Column="5" />
+      <File FileName="Assets\Scripts\Commands\PlayASpellCardCommand.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Logic\SpellScripts\HeroPowerDrawCardTakeDamage.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Logic\Interfaces.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Logic\SpellScripts\GiveManaBonus.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Logic\SpellScripts\HeroPower2Face.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

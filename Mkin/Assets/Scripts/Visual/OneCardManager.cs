@@ -65,7 +65,7 @@ public class OneCardManager : MonoBehaviour {
         else
         {
             //CardBodyImage.color = GlobalSettings.Instance.CardBodyStandardColor;
-            CardFaceFrameImage.color = Color.black;
+			//CardFaceFrameImage.color = Color.white;
             //CardTopRibbonImage.color = GlobalSettings.Instance.CardRibbonsStandardColor;
             //CardLowRibbonImage.color = GlobalSettings.Instance.CardRibbonsStandardColor;
         }
@@ -74,13 +74,14 @@ public class OneCardManager : MonoBehaviour {
         // 3) add OneTimeUse
 		OneTimeUseImage.gameObject.SetActive(cardAsset.OneTimeUse);
         // 4) add description
-        DescriptionText.text = cardAsset.Description;
+		DescriptionText.text = cardAsset.Description;
+
         // 5) Change the card graphic sprite
         CardGraphicImage.sprite = cardAsset.CardImage;
 
 		if (cardAsset.Level == 0) {
-			EquipSlotText.text = cardAsset.EquipmentSlot.ToString ();
-			UseableByText.text = cardAsset.UseableBy.ToString ();
+			EquipSlotText.text = (cardAsset.EquipmentSlot == EquipSlotOptions.Null ) ? "" : cardAsset.EquipmentSlot.ToString ();  
+			UseableByText.text = (cardAsset.UseableBy == UseableByOptions.Null) ? "" : cardAsset.UseableBy.ToString (); 
 			// 6) Set sell value
 			if (cardAsset.SellValue != 0) {
 				SellText.text = cardAsset.SellValue.ToString ();
@@ -102,12 +103,9 @@ public class OneCardManager : MonoBehaviour {
 			}
 		}
 		foreach (GameObject go in CardBackList) {
-			Debug.Log ("go name:" + go.name);
-			Debug.Log ("cardasset to string name:" + cardAsset.CardBack.ToString());
 			if (cardAsset.CardBack.ToString() == go.name) {
 				go.SetActive (true);
 			} else {
-				//destory
 				go.SetActive (false);
 			}
 		}
