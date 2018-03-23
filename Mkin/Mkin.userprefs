@@ -1,11 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Visual\OneCardManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Visual\HoverPreview.cs">
     <Files>
-      <File FileName="Assets\Scripts\Visual\OneCardManager.cs" Line="71" Column="10" />
-      <File FileName="Assets\Scripts\SO Asset Scripts\CardAsset\CardAsset.cs" Line="25" Column="29" />
-      <File FileName="Assets\Scripts\Visual\BetterCardRotation.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Visual\HoverPreview.cs" Line="23" Column="13" />
+      <File FileName="Assets\Scripts\Visual\OneCardManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SO Asset Scripts\CardAsset\CardAsset.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Visual\BetterCardRotation.cs" Line="33" Column="1" />
+      <File FileName="Assets\Scripts\Visual\HoverPreview.cs" Line="108" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

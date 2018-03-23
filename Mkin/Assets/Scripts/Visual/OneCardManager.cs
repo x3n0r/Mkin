@@ -22,7 +22,6 @@ public class OneCardManager : MonoBehaviour {
 
     [Header("Image References")]
     public Image CardTopRibbonImage;
-    public Image CardLowRibbonImage;
     public Image CardGraphicImage;
     public Image CardBodyImage;
     public Image CardFaceFrameImage;
@@ -60,14 +59,12 @@ public class OneCardManager : MonoBehaviour {
             CardBodyImage.color = cardAsset.characterAsset.ClassCardTint;
             CardFaceFrameImage.color = cardAsset.characterAsset.ClassCardTint;
             CardTopRibbonImage.color = cardAsset.characterAsset.ClassRibbonsTint;
-            CardLowRibbonImage.color = cardAsset.characterAsset.ClassRibbonsTint;
         }
         else
         {
             //CardBodyImage.color = GlobalSettings.Instance.CardBodyStandardColor;
 			//CardFaceFrameImage.color = Color.white;
             //CardTopRibbonImage.color = GlobalSettings.Instance.CardRibbonsStandardColor;
-            //CardLowRibbonImage.color = GlobalSettings.Instance.CardRibbonsStandardColor;
         }
         // 2) add card name
         NameText.text = cardAsset.name;

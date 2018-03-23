@@ -66,6 +66,7 @@
      <Compile Include="Assets\Scripts\Visual\BetterCardRotation.cs" />
      <Compile Include="Assets\Scripts\Visual\HoverPreview.cs" />
      <Compile Include="Assets\Scripts\Visual\OneCardManager.cs" />
+     <Compile Include="Assets\Scripts\Visual\SameDistanceChildren.cs" />
      <None Include="Assets\DOTween\DOTween43.xml" />
      <None Include="Assets\DOTween\DOTween46.xml" />
      <None Include="Assets\DOTween\DOTween50.xml" />

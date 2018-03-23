@@ -98,15 +98,8 @@ public class HoverPreview: MonoBehaviour
     // STATIC METHODS
     private static void StopAllPreviews()
     {
-        if (currentlyViewing != null)
-        {
-            currentlyViewing.previewGameObject.SetActive(false);
-            currentlyViewing.previewGameObject.transform.localScale = Vector3.one;
-            currentlyViewing.previewGameObject.transform.localPosition = Vector3.zero;
-            if (currentlyViewing.TurnThisOffWhenPreviewing!=null)
-                currentlyViewing.TurnThisOffWhenPreviewing.SetActive(true); 
-        }
-         
+		if (currentlyViewing != null)
+			currentlyViewing.StopThisPreview ();
     }
 
     private static bool PreviewingSomeCard()
@@ -115,13 +108,11 @@ public class HoverPreview: MonoBehaviour
             return false;
 
         HoverPreview[] allHoverBlowups = GameObject.FindObjectsOfType<HoverPreview>();
-
         foreach (HoverPreview hb in allHoverBlowups)
         {
             if (hb.OverCollider && hb.ThisPreviewEnabled)
                 return true;
         }
-
         return false;
     }
 
