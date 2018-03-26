@@ -64,8 +64,11 @@
      <Compile Include="Assets\Scripts\UI\Outlines by N Yoda\ObjectPool.cs" />
      <Compile Include="Assets\Scripts\UI\Outlines by N Yoda\Outline8.cs" />
      <Compile Include="Assets\Scripts\Visual\BetterCardRotation.cs" />
+     <Compile Include="Assets\Scripts\Visual\DamageEffect.cs" />
+     <Compile Include="Assets\Scripts\Visual\DamageEffectTest.cs" />
      <Compile Include="Assets\Scripts\Visual\HoverPreview.cs" />
      <Compile Include="Assets\Scripts\Visual\OneCardManager.cs" />
+     <Compile Include="Assets\Scripts\Visual\PlayerPortraitManager.cs" />
      <Compile Include="Assets\Scripts\Visual\SameDistanceChildren.cs" />
      <None Include="Assets\DOTween\DOTween43.xml" />
      <None Include="Assets\DOTween\DOTween46.xml" />

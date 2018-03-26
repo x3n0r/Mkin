@@ -56,9 +56,9 @@ public class OneCardManager : MonoBehaviour {
         // 1) apply tint
         if (cardAsset.characterAsset != null)
         {
-            CardBodyImage.color = cardAsset.characterAsset.ClassCardTint;
-            CardFaceFrameImage.color = cardAsset.characterAsset.ClassCardTint;
-            CardTopRibbonImage.color = cardAsset.characterAsset.ClassRibbonsTint;
+            //CardBodyImage.color = cardAsset.characterAsset.ClassCardTint;
+            //CardFaceFrameImage.color = cardAsset.characterAsset.ClassCardTint;
+            //CardTopRibbonImage.color = cardAsset.characterAsset.ClassRibbonsTint;
         }
         else
         {
